@@ -3,7 +3,7 @@
  * clock.js v0.0.1
  * jQuery Simple Clock Plugin - released under MIT License 
  * @author Shabak Nikolay <nikolay.shabak@gmail.com> 
- * https://github.com/shabak/clock
+ * https://github.com/shabak/jquery.clock
  * Copyright (c) 2014 
  */
 (function ($) {
