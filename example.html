@@ -10,7 +10,10 @@
     <script src="jquery.clock.js"></script>
     <script>
         $('#clock').clock({time:{h:23,m:59,s:30}});
-        $('#countdown').countdown({time:{d:1,h:0,m:0,s:5}});
+        $('#countdown').countdown( { 
+            time:{d:0,h:0,m:0,s:5},
+            callback: function() { console.log('done!'); } 
+        } );
     </script>
 </body>
 </html>
