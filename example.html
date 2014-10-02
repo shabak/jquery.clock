@@ -5,10 +5,12 @@
 </head>
 <body>
     <div id="clock"></div>
+    <div id="countdown"></div>
     <script src="jquery-1.9.1.min.js"></script>
     <script src="jquery.clock.js"></script>
     <script>
         $('#clock').clock({time:{h:23,m:59,s:30}});
+        $('#countdown').countdown({time:{d:1,h:0,m:0,s:5}});
     </script>
 </body>
 </html>
