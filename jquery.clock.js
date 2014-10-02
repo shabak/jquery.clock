@@ -51,7 +51,7 @@
             s--;
             var str = '';
             if (d === 0 && h === 0 && m === 0 && s === 0) {
-                callback();
+                if (jQuery.isFunction(callback)) callback();                
             } else {
                 str = fd(d) + ' ' + f(h)+':'+f(m)+':'+f(s);
             }
@@ -89,7 +89,7 @@
         if (time.d < 0 || time.h < 0 || time.m < 0 || time.s < 0 || time.h > 23 || time.m > 59 || time.s > 59) return;
         var theCountdown = $.countdown(this, opt, function() {
             clearInterval(theCountdown.intervalId);
-            opt.callback();
+            if (jQuery.isFunction(opt.callback)) opt.callback();
         });
         theCountdown.tick();
         theCountdown.intervalId = setInterval(theCountdown.tick, 1000);
